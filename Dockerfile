@@ -81,3 +81,6 @@ RUN git clone https://git.kernel.org/pub/scm/devel/sparse/sparse.git /sparse && 
 RUN git clone https://repo.or.cz/smatch.git /smatch && \
 	cd /smatch && make
 
+# Install clang
+COPY download-llvm.sh /
+RUN /download-llvm.sh
