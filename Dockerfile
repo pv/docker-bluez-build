@@ -78,7 +78,7 @@ RUN git clone https://git.kernel.org/pub/scm/devel/sparse/sparse.git /sparse && 
 	cd /sparse && make && make PREFIX=/usr install && rm -rf /sparse
 
 # Install smatch tool
-RUN git clone https://repo.or.cz/smatch.git /smatch && \
+RUN git clone -b 1.74 https://repo.or.cz/smatch.git /smatch && \
 	cd /smatch && make
 
 # Install clang
