@@ -10,16 +10,20 @@ RUN apt-get update && \
 		bc \
 		bear \
 		bison \
+		black \
 		build-essential \
 		ca-certificates \
 		ccache \
+		chrony \
 		clang-tools \
 		cmake \
 		cppcheck \
 		curl \
+		dbus-daemon \
 		dkms \
 		fakeroot \
 		flex \
+		gdb \
 		git \
 		git-core \
 		gitlint \
@@ -56,6 +60,12 @@ RUN apt-get update && \
 		python3-github \
 		python3-requests \
 		python3-ply \
+		python3-dbus \
+		python3-pytest \
+		python3-gi \
+		python3-pexpect \
+		python3-psutil \
+		python3-pytest-xdist \
 		qemu-system-x86 \
 		systemd \
 		systemd-dev \
