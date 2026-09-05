@@ -1,11 +1,11 @@
 #!/bin/sh
 set -x -e
 
-BASE=llvm-23.0.0-51d823197cb40a57f25d00882546374d460c649e-20260616-023936-x86_64
-DIR=prerelease/
+BASE=llvm-23.1.0-x86_64
+DIR=
 
 cat <<EOF > CHECKSUMS
-2db98e98924c7d60cd3c4b605dc9f8c5c3d4357a50338a4cf4a36439ee162305  ${BASE}.tar.gz
+a5ff3fe2e663195abe000668efcbec13c2d25c239f5a20b6628991629091caad  ${BASE}.tar.gz
 EOF
 
 curl -C - -O "https://mirrors.kernel.org/pub/tools/llvm/files/${DIR}${BASE}.tar.gz"
