@@ -99,7 +99,7 @@ RUN git clone --depth 1 --revision=5e13a0ee549b29edc4fd5b92579a49acf9194b63 \
 	cd /smatch && make
 
 # Install pytest-bluezenv
-RUN python3 -mpip install --break-system-packages pytest-bluezenv==0.1.8
+RUN python3 -mpip install --break-system-packages pytest-bluezenv==0.1.9
 
 # Install clang
 COPY download-llvm.sh /
