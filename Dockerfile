@@ -71,6 +71,7 @@ RUN apt-get update && \
 		systemd-dev \
 		udev \
 		valgrind \
+		virtiofsd \
 		wget \
 		xxd && \
 	rm -rf /var/lib/apt/lists/*
